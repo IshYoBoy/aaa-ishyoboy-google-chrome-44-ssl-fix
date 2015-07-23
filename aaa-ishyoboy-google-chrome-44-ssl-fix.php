@@ -17,7 +17,9 @@ if ( ! class_exists( 'Ishyoboy_Google_Chrome_44_SSL_Fix' ) ) :
 
 		function __construct() {
 
-			if ( '80' == $_SERVER['SERVER_PORT'] ) {
+			if ( isset($_SERVER['SERVER_PORT']) && '80' == $_SERVER['SERVER_PORT'] || 
+				( !isset($_SERVER['SERVER_PORT']) && (false !== strstr($_SERVER['HTTP_USER_AGENT'], 'Chrome/44') || false !== strstr($_SERVER['HTTP_USER_AGENT'], 'Chrome/45')) ) 
+				) {
 				unset($_SERVER['HTTPS']);
 				unset($_SERVER['HTTP_HTTPS']);
 			}
