@@ -19,6 +19,7 @@ if ( ! class_exists( 'Ishyoboy_Google_Chrome_44_SSL_Fix' ) ) :
 
 			if ( '80' == $_SERVER['SERVER_PORT'] ) {
 				$_SERVER['HTTPS'] = '0';
+				unset($_SERVER['HTTP_HTTPS']);
 			}
 		}
 
@@ -27,5 +28,3 @@ if ( ! class_exists( 'Ishyoboy_Google_Chrome_44_SSL_Fix' ) ) :
 	new Ishyoboy_Google_Chrome_44_SSL_Fix;
 
 endif;
-
-?>
