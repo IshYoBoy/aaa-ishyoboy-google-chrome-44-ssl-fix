@@ -36,7 +36,7 @@ Remeber to deactivate and remove the plugin once the next version of Google Chro
 <strong>5. USEFUL LINKS:</strong>
 
 Innitial Spunmonkey mention about the problem:<br>
-http://spunmonkey.design/chrome-beta-44-causing-problems-with-httpsssl/
+http://spunmonkey.design/chrome-beta-44-causing-problems-with-httpsssl/ <br>
 https://ma.ttias.be/chrome-44-sending-https-header-by-mistake-breaking-web-applications-everywhere/
 
 Chromium Project Bug Tracker:<br>
