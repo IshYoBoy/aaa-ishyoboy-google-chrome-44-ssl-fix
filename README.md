@@ -2,7 +2,10 @@
 
 <strong>1. SYMPTOMS:</strong>
 
-The latest version of Google Chrome Browser does a very strange thing. It sends HTTPS header with value 1 which the is_ssl() WordPress function reads and sets the HTTPS as TRUE.
+<strike>The latest version of Google Chrome Browser does a very strange thing. It sends HTTPS header with value 1 which the is_ssl() WordPress function reads and sets the HTTPS as TRUE.</strike>
+
+Update #1 - 24.07.2015 - 13:05
+It seems the problems were caused due to a wrong implementation and usage of "$_SERVER['HTTP_HTTPS']" either by Themes, Plugins or Even Hosting providers.
 
 What this results in is that even though your WordPress is not set to use SSL and no security certificate is present all files like CSS, JavaScripts, Images even all links are set to go through HTTPS connection.
 
@@ -16,13 +19,11 @@ This results in a majority of WordPress installs being broken (completely broken
 
 <strong>3. WHAT THIS PLUGIN DOES:</strong>
 
-The plugin sets:
+The plugin unsets:
 
-<code>$_SERVER[‘HTTPS’] = false;</code>
+<code>unset( $_SERVER[‘HTTP_HTTPS’] );</code>
 
-This ensures that the connection is always handled as HTTP, not HTTPS.
-
-<strong>Note:</strong> If you use HTTPS for some pages this plugin might not work perfectly for you.
+This ensures that the connection is always handled correctly. If this does not solve the problem, you might need to contact your hosting provider about this issue as SSL might be turned on before the WordPress even starts.
 
 
 <strong>4. HOW TO USE:</strong>
@@ -36,13 +37,15 @@ Remeber to deactivate and remove the plugin once the next version of Google Chro
 
 Innitial Spunmonkey mention about the problem:<br>
 http://spunmonkey.design/chrome-beta-44-causing-problems-with-httpsssl/
+https://ma.ttias.be/chrome-44-sending-https-header-by-mistake-breaking-web-applications-everywhere/
 
 Chromium Project Bug Tracker:<br>
 https://code.google.com/p/chromium/issues/detail?id=505268
+https://code.google.com/p/chromium/issues/detail?id=501842
 
 <strong>6. CONTRIBUTORS</strong>
 
-Thanks to <a href="https://github.com/tomsommer" target="_blank">Tom Sommer</a> for the active approach in making the plugin better.
+Thanks to <a href="https://github.com/tomsommer" target="_blank">Tom Sommer</a> and <a href="https://github.com/DanielRuf" target="_blank">Daniel Ruf</a> for the active approach in making the plugin better.
 
 
 <strong>7. BUY ME A COFFEE:</strong>
