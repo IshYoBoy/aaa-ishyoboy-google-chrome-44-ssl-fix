@@ -16,8 +16,10 @@ if ( ! class_exists( 'Ishyoboy_Google_Chrome_44_SSL_Fix' ) ) :
 	class Ishyoboy_Google_Chrome_44_SSL_Fix {
 
 		function __construct() {
-			// Temporary Chrome 44 fix
-			$_SERVER['HTTPS'] = false;
+
+			if ( isset($_SERVER['HTTP_HTTPS']) ) {
+				unset($_SERVER['HTTP_HTTPS']);
+			}
 		}
 
 	}
@@ -25,5 +27,3 @@ if ( ! class_exists( 'Ishyoboy_Google_Chrome_44_SSL_Fix' ) ) :
 	new Ishyoboy_Google_Chrome_44_SSL_Fix;
 
 endif;
-
-?>
