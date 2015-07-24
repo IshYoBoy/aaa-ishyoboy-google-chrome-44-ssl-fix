@@ -41,7 +41,9 @@ Chromium Project Bug Tracker:<br>
 https://code.google.com/p/chromium/issues/detail?id=505268
 
 <strong>6. CONTRIBUTORS</strong>
-Thanks to <a href="https://github.com/tomsommer" target="_blank">Tom Sommer</a> for the active approach in making the plugin better
+
+Thanks to <a href="https://github.com/tomsommer" target="_blank">Tom Sommer</a> for the active approach in making the plugin better.
+
 
 <strong>7. BUY ME A COFFEE:</strong>
 
