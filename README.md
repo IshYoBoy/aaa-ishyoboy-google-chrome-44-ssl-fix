@@ -40,8 +40,10 @@ http://spunmonkey.design/chrome-beta-44-causing-problems-with-httpsssl/
 Chromium Project Bug Tracker:<br>
 https://code.google.com/p/chromium/issues/detail?id=505268
 
+<strong>6. CONTRIBUTORS</strong>
+Thanks to <a href="https://github.com/tomsommer" target="_blank">Tom Sommer</a> for the active approach in making the plugin better
 
-<strong>6. BUY ME A COFFEE:</strong>
+<strong>7. BUY ME A COFFEE:</strong>
 
 Did this fix help you? Or even saved a lot of troubles?<br>
 Well, it did for me and our business <a href="http://themeforest.net/user/IshYoBoy/portfolio?ref=IshYoBoy" target="_blank">IshYoBoy.com - Premium WordPress Themes</a>. 
