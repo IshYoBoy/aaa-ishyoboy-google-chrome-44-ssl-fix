@@ -19,7 +19,6 @@ if ( ! class_exists( 'Ishyoboy_Google_Chrome_44_SSL_Fix' ) ) :
 
 			if ( isset($_SERVER['HTTP_HTTPS']) ) {
 				unset($_SERVER['HTTP_HTTPS']);
-				$_SERVER['HTTPS'] = 'off';
 			}
 		}
 
