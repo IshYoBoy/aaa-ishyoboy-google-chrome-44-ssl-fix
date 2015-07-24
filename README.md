@@ -4,7 +4,7 @@
 
 <strike>The latest version of Google Chrome Browser does a very strange thing. It sends HTTPS header with value 1 which the is_ssl() WordPress function reads and sets the HTTPS as TRUE.</strike>
 
-Update #1 - 24.07.2015 - 13:05
+<strong>Update #1<.strong - 24.07.2015 - 13:05<br>
 It seems the problems were caused due to a wrong implementation and usage of "$_SERVER['HTTP_HTTPS']" either by Themes, Plugins or Even Hosting providers.
 
 What this results in is that even though your WordPress is not set to use SSL and no security certificate is present all files like CSS, JavaScripts, Images even all links are set to go through HTTPS connection.
