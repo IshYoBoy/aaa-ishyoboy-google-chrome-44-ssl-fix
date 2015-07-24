@@ -23,7 +23,7 @@ The plugin unsets:
 
 <code>unset( $_SERVER[‘HTTP_HTTPS’] );</code>
 
-This ensures that the connection is always handled correctly. If this does not solve the problem, you might need to contact your hosting provider about this issue as SSL might be turned on before the WordPress even starts.
+This ensures that the connection is always handled correctly. If this does not solve the problem, you might need to contact your hosting provider about this issue as SSL might be turned on before the WordPress even starts. Alternatively you can try the <a href="https://code.google.com/p/chromium/issues/detail?id=501842#c38" target="_blank">.htaccess</a> fix or set the $_SERVER['HTTPS'] to 'off'.
 
 
 <strong>4. HOW TO USE:</strong>
