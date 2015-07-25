@@ -1,5 +1,8 @@
 <h1>Google Chrome v.44 WordPress SSL Fix<br>by <a href="http://themeforest.net/user/IshYoBoy/portfolio?ref=IshYoBoy" target="_blank">IshYoBoy.com</a></h1>
 
+<strong>Update #2</strong> - 25.07.2015 - 07:10<br>
+Google Chrome released an official fix patch. Version 44.0.2403.107 (Win, Mac, Linux) fixes this behavior. So go ahead and update your browser. You should see an update already https://code.google.com/p/chromium/issues/detail?id=501842#c63
+
 <strong>1. SYMPTOMS:</strong>
 
 <strike>The latest version of Google Chrome Browser does a very strange thing. It sends HTTPS header with value 1 which the is_ssl() WordPress function reads and sets the HTTPS as TRUE.</strike>
